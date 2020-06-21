@@ -40,13 +40,23 @@ function App() {
         </Button>
       </div>
       <div className="buttons">
-        <Button size="large" fullWidth>
+        <Button size="large" fullWidth className="customized-button">
           BUTTON
         </Button>
         <Button size="large" color="pink" fullWidth>
           BUTTON
         </Button>
-        <Button size="large" color="gray" fullWidth>
+        <Button
+          size="large"
+          color="gray"
+          fullWidth
+          onClick={() => {
+            console.log("클릭!");
+          }}
+          onMouseMove={() => {
+            console.log("마우스무브!");
+          }}
+        >
           BUTTON
         </Button>
       </div>
